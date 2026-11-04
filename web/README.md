@@ -1,56 +1,55 @@
-# 🦌 DeerFlow Web UI
+# 🦌 DeerFlow Web 界面
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![许可证：MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-> Originated from Open Source, give back to Open Source.
+> 源于开源，回馈开源。
 
-This is the web UI for [`DeerFlow`](https://github.com/bytedance/deer-flow).
+这是 [`DeerFlow`](https://github.com/bytedance/deer-flow) 的网页 UI。
 
-## Quick Start
+## 快速开始
 
-### Prerequisites
+### 前置条件
 
 - [`DeerFlow`](https://github.com/bytedance/deer-flow)
 - Node.js (v22.14.0+)
-- pnpm (v10.6.2+) as package manager
+- pnpm（v10.6.2+）作为包管理器
 
-### Configuration
+### 配置
 
-Create a `.env` file in the project root and configure the following environment variables:
+在项目根目录中创建一个 `.env` 文件，并配置以下环境变量：
 
-- `NEXT_PUBLIC_API_URL`: The URL of the deer-flow API.
+- `NEXT_PUBLIC_API_URL`：deer-flow API 的 URL。
 
-It's always a good idea to start with the given example file, and edit the `.env` file with your own values:
+建议始终从提供的示例文件开始，并使用你自己的值编辑 `.env` 文件：
 
 ```bash
 cp .env.example .env
 ```
 
-## How to Install
+## 如何安装
 
-DeerFlow Web UI uses `pnpm` as its package manager.
-To install the dependencies, run:
+DeerFlow Web UI 使用 `pnpm` 作为包管理器。要安装依赖项，请运行：
 
 ```bash
 cd web
 pnpm install
 ```
 
-## How to Run in Development Mode
+## 如何以开发模式运行
 
 > [!NOTE]
-> Ensure the Python API service is running before starting the web UI.
+> 启动 Web UI 前，请确保 Python API 服务正在运行。
 
-Start the web UI development server:
+启动 Web UI 开发服务器：
 
 ```bash
 cd web
 pnpm dev
 ```
 
-By default, the web UI will be available at `http://localhost:3000`.
+默认情况下，可通过 `http://localhost:3000` 访问 Web UI。
 
-You can set the `NEXT_PUBLIC_API_URL` environment variable if you're using a different host or location.
+如果你使用其他主机或位置，可以设置 `NEXT_PUBLIC_API_URL` 环境变量。
 
 ```ini
 # .env
@@ -59,17 +58,17 @@ NEXT_PUBLIC_API_URL=http://localhost:8000/api
 
 ## Docker
 
-You can also run this project with Docker.
+你也可以使用 Docker 运行此项目。
 
-First, you need read the [configuration](#configuration) below. Make sure `.env` file is ready.
+首先，你需要阅读下面的[配置](#配置)。确保 `.env` 文件已准备就绪。
 
-Second, to build a Docker image of your own web server:
+其次，构建你自己的 Web 服务器 Docker 镜像：
 
 ```bash
 docker build --build-arg NEXT_PUBLIC_API_URL=YOUR_DEER-FLOW_API -t deer-flow-web .
 ```
 
-Final, start up a docker container running the web server:
+最后，启动运行 Web 服务器的 Docker 容器：
 
 ```bash
 # Replace deer-flow-web-app with your preferred container name
@@ -81,7 +80,7 @@ docker stop deer-flow-web-app
 
 ### Docker Compose
 
-You can also setup this project with the docker compose:
+你也可以使用 Docker Compose 设置此项目：
 
 ```bash
 # building docker image
@@ -91,22 +90,21 @@ docker compose build
 docker compose up
 ```
 
-## License
+## 许可证
 
-This project is open source and available under the [MIT License](../LICENSE).
+本项目为开源项目，采用 [MIT 许可证](../LICENSE)。
 
-## Acknowledgments
+## 致谢
 
-We extend our heartfelt gratitude to the open source community for their invaluable contributions.
-DeerFlow is built upon the foundation of these outstanding projects:
+我们衷心感谢开源社区做出的宝贵贡献。DeerFlow 构建于这些杰出项目之上：
 
-In particular, we want to express our deep appreciation for:
+我们尤其要向以下各方致以衷心感谢：
 
-- [Next.js](https://nextjs.org/) for their exceptional framework
-- [Shadcn](https://ui.shadcn.com/) for their minimalistic components that powers our UI
-- [Zustand](https://zustand.docs.pmnd.rs/) for their stunning state management
-- [Framer Motion](https://www.framer.com/motion/) for their amazing animation library
-- [React Markdown](https://www.npmjs.com/package/react-markdown) for their exceptional markdown rendering and customizability
-- Last but not least, special thanks to [SToneX](https://github.com/stonexer) for his great contribution for [token-by-token visual effect](./src/core/rehype/rehype-split-words-into-spans.ts)
+- [Next.js](https://nextjs.org/)，感谢他们提供出色的框架
+- [Shadcn](https://ui.shadcn.com/)，其简约组件为我们的 UI 提供支持
+- [Zustand](https://zustand.docs.pmnd.rs/)，凭借其出色的状态管理功能
+- [Framer Motion](https://www.framer.com/motion/)，感谢他们提供出色的动画库
+- [React Markdown](https://www.npmjs.com/package/react-markdown)，提供卓越的 Markdown 渲染能力和高度可定制性
+- 最后但同样重要的是，特别感谢 [SToneX](https://github.com/stonexer) 为 [逐 token 视觉效果](./src/core/rehype/rehype-split-words-into-spans.ts) 做出的杰出贡献
 
-These outstanding projects form the backbone of DeerFlow and exemplify the transformative power of open source collaboration.
+这些优秀项目构成了 DeerFlow 的核心支柱，彰显了开源协作的变革力量。

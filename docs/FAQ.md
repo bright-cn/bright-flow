@@ -1,15 +1,15 @@
-# FAQ
+# 常见问题
 
-## Table of Contents
+## 目录
 
-- [Where's the name DeerFlow come from?](#wheres-the-name-deerflow-come-from)
+- [DeerFlow 这个名称从何而来？](#deerflow-这个名称从何而来)
 
-- [Which models does DeerFlow support?](#which-models-does-deerflow-support)
+- [DeerFlow 支持哪些模型？](#deerflow-支持哪些模型)
 
-## Where's the name DeerFlow come from?
+## DeerFlow 这个名称从何而来？
 
-DeerFlow is short for **D**eep **E**xploration and **E**fficient **R**esearch **Flow**. It is named after the deer, which is a symbol of gentleness and elegance. We hope DeerFlow can bring a gentle and elegant deep research experience to you.
+DeerFlow 是 **D**eep **E**xploration and **E**fficient **R**esearch **Flow**（深度探索与高效研究流程）的缩写。其名称取自象征温和与优雅的鹿。我们希望 DeerFlow 能为你带来温和优雅的深度研究体验。
 
-## Which models does DeerFlow support?
+## DeerFlow 支持哪些模型？
 
-Please refer to the [Configuration Guide](configuration_guide.md) for more details.
+有关更多详情，请参阅[配置指南](configuration_guide.md)。
